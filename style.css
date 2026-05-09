@@ -1,56 +1,61 @@
 /* ========================================= */
-/* Global Styles (Based on your original input) */
+/* GLOBAL STYLES AND DARK MODE SETTINGS */
 /* ========================================= */
+
+/* Sets the background to black and controls text alignment */
 body {
-    background-color: #f5f5f5; /* Your desired light gray background */
-    font-family: Arial, sans-serif; /* A safe, readable font */
-    text-align: center; /* Centers the content on the page */
-    padding-top: 100px; /* Adds padding to keep content away from the browser edge */
-    margin: 0; /* Good practice to remove default browser margins */
-}
-
-/* Styles specific to the main title */
-h1 {
-    color: #ff69b4; /* Your desired hot pink color for the main title */
-    font-size: 50px;
-}
-
-/* ========================================= */
-/* Structural & Navigational Styles */
-/* ========================================= */
-
-header {
-    /* Centers the text and adds a visual group for the title and nav */
+    background-color: black; /* Black background */
+    font-family: Arial, sans-serif;
     text-align: center;
-    padding: 20px 0;
+    padding-top: 100px;
+    margin: 0; /* Removes default margins */
+    color: #ADD8E6; /* Light Blue text color for the entire page body */
 }
 
-/* Styles for the main content area */
+/* The main, dominant title */
+h1 {
+    color: #ADD8E6; /* Light blue color */
+    font-size: 65px; /* Large and impactful size */
+    margin-top: 0; /* Keeps it close to the welcome phrase */
+}
+
+/* The small welcome phrase */
+.welcome-text {
+    color: #ADD8E6; /* Light blue color */
+    font-size: 24px; /* Smaller size than the main title */
+    margin-bottom: 0; /* Keeps it compact */
+}
+
+
+/* ========================================= */
+/* NAVIGATION & BUTTON STYLING */
+/* ========================================= */
+
+/* Ensures the nav links are still clean buttons */
+nav a {
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ADD8E6; /* Light blue for contrast */
+    transition: background-color 0.3s;
+}
+
+/* Hover effect adds interactivity */
+nav a:hover {
+    background-color: #1e3a58; /* Darker blue background on hover */
+    color: white;
+}
+
+/* MAIN CONTENT & FOOTER */
 main {
-    padding: 20px;
+    padding: 40px 0;
+    color: #ADD8E6; /* Ensures the main paragraph text is also light blue */
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #000; /* Solid black footer */
+    color: #666; /* Darker grey for footer text so it doesn't overpower */
     padding: 15px 0;
-    margin-top: 50px;
-}
-
-/* NAVIGATION BUTTON STYLING (The crucial part for your request) */
-nav a {
-    display: inline-block; /* Allows links to sit side-by-side */
-    padding: 10px 25px; /* Creates the "button" shape */
-    text-decoration: none; /* Removes default underlines */
-    font-size: 18px;
-    font-weight: bold;
-    color: #333; /* Darker color contrasts nicely with the header */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
-
-/* Hover effect makes the user know the link is clickable */
-nav a:hover {
-    background-color: rgba(255, 105, 180, 0.1); /* Subtle pink background on hover */
-    color: #ff69b4; /* Switches to the hot pink color on hover */
-    cursor: pointer;
 }
