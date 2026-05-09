@@ -11,9 +11,8 @@ body {
     color: #ADD8E6; /* Light Blue text color */
 }
 
-/* Header elements remain the same */
+/* Header elements */
 header {
-    /* Ensures the header elements maintain proper spacing */
     padding: 20px 0;
 }
 
@@ -29,64 +28,97 @@ h1 {
     margin-bottom: 0;
 }
 
+/* ========================================= */
+/* NAVIGATION STYLING (NEWLY ADDED) */
+/* ========================================= */
+nav {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 25px;
+    color: #ADD8E6;
+    text-decoration: none;
+    border: 2px solid #ADD8E6;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ADD8E6;
+    color: black;
+}
 
 /* ========================================= */
-/* NEW "IT'S ME" PAGE SPECIFIC STYLING */
+/* "IT'S ME" PAGE SPECIFIC STYLING */
 /* ========================================= */
 
 main.about-main {
-    /* Provides a cleaner area for the page content */
-    padding: 40px 5%; /* Adds horizontal padding on wider screens */
-    max-width: 900px; /* Keeps the content readable by limiting its width */
-    margin: 0 auto; /* Centers the main content block */
+    padding: 40px 5%; 
+    max-width: 900px; 
+    margin: 0 auto; 
 }
 
 /* Profile Image Styling (Visual Anchor) */
 .profile-img {
-    width: 150px; /* Standard size for a profile pic */
-    height: 150px; /* Makes it a perfect square */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    border-radius: 50%; /* Makes the image perfectly round */
-    display: block; /* Forces the image to behave correctly in the layout */
-    margin: 0 auto 20px; /* Centers the image and adds spacing below it */
-    border: 3px solid #ADD8E6; /* Adds a visual frame/border to the picture */
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    display: block; 
+    margin: 0 auto 20px; 
+    border: 3px solid #ADD8E6; 
 }
 
 /* Section Headings */
 h2, h3 {
     color: #ADD8E6;
     margin-top: 40px;
-    border-bottom: 1px solid rgba(173, 216, 230, 0.3); /* Subtle line under titles */
+    border-bottom: 1px solid rgba(173, 216, 230, 0.3); 
     padding-bottom: 5px;
 }
 
 /* Body Text */
 p {
     margin-bottom: 20px;
-    line-height: 1.7; /* Improves readability for longer paragraphs */
-    /* Keep text left-aligned inside the main block for easier reading */
+    line-height: 1.7; 
     text-align: left; 
+}
+
+/* Specific centering for main index text */
+main p {
+    text-align: center;
 }
 
 /* Skill List Styling */
 .skill-list {
-    list-style: none; /* Removes default bullet points */
+    list-style: none; 
     padding: 0;
-    display: flex; /* Arranges items in a row */
-    flex-wrap: wrap; /* Allows items to wrap onto the next line if needed */
-    justify-content: center; /* Centers the list items */
-    gap: 10px; /* Space between the list items */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
     margin: 20px auto;
-    max-width: fit-content; /* Makes the list itself only take up required space */
+    max-width: fit-content; 
 }
 
 .skill-list li {
-    background-color: rgba(173, 216, 230, 0.1); /* Subtle colored background for each skill chip */
+    background-color: rgba(173, 216, 230, 0.1); 
     padding: 8px 15px;
-    border-radius: 20px; /* Makes it look like a tag/pill */
+    border-radius: 20px; 
     color: #ADD8E6;
-    border: 1px solid rgba(173, 216, 230, 0.5); /* Delicate frame around the skill */
+    border: 1px solid rgba(173, 216, 230, 0.5); 
     transition: background-color 0.3s;
+}
+
+.skill-list li:hover {
+    background-color: rgba(173, 216, 230, 0.3);
 }
 
 /* Contact Link Styling */
@@ -98,10 +130,9 @@ p {
 }
 
 .social-link {
-    /* Reuses the button styling but makes it smaller and focused on contact */
     display: inline-block;
     padding: 10px 20px;
-    background-color: #003366; /* Deeper blue for contrast */
+    background-color: #003366; 
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -112,9 +143,10 @@ p {
     background-color: #0055AA;
 }
 
-/* Footer remains consistent */
+/* Footer */
 footer {
-    background-color: black; /* Reinforces the page background */
+    background-color: black; 
     color: #666;
-    padding: 15px 0;
+    padding: 30px 0;
+    margin-top: 40px;
 }
