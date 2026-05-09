@@ -2,60 +2,67 @@
 /* GLOBAL STYLES AND DARK MODE SETTINGS */
 /* ========================================= */
 
-/* Sets the background to black and controls text alignment */
 body {
     background-color: black; /* Black background */
     font-family: Arial, sans-serif;
     text-align: center;
     padding-top: 100px;
-    margin: 0; /* Removes default margins */
+    margin: 0; 
     color: #ADD8E6; /* Light Blue text color for the entire page body */
 }
 
-/* The main, dominant title */
+/* Title Styling */
 h1 {
     color: #ADD8E6; /* Light blue color */
-    font-size: 65px; /* Large and impactful size */
-    margin-top: 0; /* Keeps it close to the welcome phrase */
+    font-size: 65px; 
+    margin-top: 0; 
 }
 
-/* The small welcome phrase */
+/* Small Welcome Phrase */
 .welcome-text {
-    color: #ADD8E6; /* Light blue color */
-    font-size: 24px; /* Smaller size than the main title */
-    margin-bottom: 0; /* Keeps it compact */
+    color: #ADD8E6; 
+    font-size: 24px; 
+    margin-bottom: 0;
 }
 
 
 /* ========================================= */
-/* NAVIGATION & BUTTON STYLING */
+/* NAVIGATION & BUTTON STYLING (New Styles Added) */
 /* ========================================= */
 
-/* Ensures the nav links are still clean buttons */
 nav a {
+    /* Base styles for all links */
     display: inline-block;
     padding: 10px 25px;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    color: #ADD8E6; /* Light blue for contrast */
+    color: #ADD8E6; 
     transition: background-color 0.3s;
+    
+    /* Styling for the "Frame" and "Rounded Edge" (Specific to the Home Button) */
+    border: 2px solid #ADD8E6; /* Adds the frame */
+    border-radius: 8px; /* Creates the rounded edges */
+    background-color: transparent; /* Keeps the background clean until hovered */
+    padding: 10px 30px; /* Generous padding for a button feel */
 }
 
-/* Hover effect adds interactivity */
 nav a:hover {
     background-color: #1e3a58; /* Darker blue background on hover */
     color: white;
+    /* Optional: You could add a subtle box-shadow here to enhance the frame */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
+
 
 /* MAIN CONTENT & FOOTER */
 main {
     padding: 40px 0;
-    color: #ADD8E6; /* Ensures the main paragraph text is also light blue */
+    color: #ADD8E6; 
 }
 
 footer {
-    background-color: #000; /* Solid black footer */
-    color: #666; /* Darker grey for footer text so it doesn't overpower */
+    background-color: #000; 
+    color: #666; 
     padding: 15px 0;
 }
