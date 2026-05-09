@@ -27,7 +27,7 @@ h1 {
 
 
 /* ========================================= */
-/* NAVIGATION & BUTTON STYLING (New Styles Added) */
+/* NAVIGATION & BUTTON STYLING */
 /* ========================================= */
 
 nav a {
@@ -45,12 +45,13 @@ nav a {
     border-radius: 8px; /* Creates the rounded edges */
     background-color: transparent; /* Keeps the background clean until hovered */
     padding: 10px 30px; /* Generous padding for a button feel */
+    /* Note: Added margin/padding context here for visual consistency if needed */
 }
 
 nav a:hover {
     background-color: #1e3a58; /* Darker blue background on hover */
     color: white;
-    /* Optional: You could add a subtle box-shadow here to enhance the frame */
+    /* Optional: Adds visual depth on hover */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 
