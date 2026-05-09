@@ -1,24 +1,28 @@
 /* ========================================= */
-/* GLOBAL STYLES AND DARK MODE SETTINGS */
+/* GLOBAL STYLES (Base Dark Mode) */
 /* ========================================= */
 
 body {
-    background-color: black; /* Black background */
+    background-color: black; 
     font-family: Arial, sans-serif;
     text-align: center;
     padding-top: 100px;
     margin: 0; 
-    color: #ADD8E6; /* Light Blue text color for the entire page body */
+    color: #ADD8E6; /* Light Blue text color */
 }
 
-/* Title Styling */
+/* Header elements remain the same */
+header {
+    /* Ensures the header elements maintain proper spacing */
+    padding: 20px 0;
+}
+
 h1 {
-    color: #ADD8E6; /* Light blue color */
+    color: #ADD8E6; 
     font-size: 65px; 
     margin-top: 0; 
 }
 
-/* Small Welcome Phrase */
 .welcome-text {
     color: #ADD8E6; 
     font-size: 24px; 
@@ -27,43 +31,90 @@ h1 {
 
 
 /* ========================================= */
-/* NAVIGATION & BUTTON STYLING */
+/* NEW "IT'S ME" PAGE SPECIFIC STYLING */
 /* ========================================= */
 
-nav a {
-    /* Base styles for all links */
-    display: inline-block;
-    padding: 10px 25px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: #ADD8E6; 
+main.about-main {
+    /* Provides a cleaner area for the page content */
+    padding: 40px 5%; /* Adds horizontal padding on wider screens */
+    max-width: 900px; /* Keeps the content readable by limiting its width */
+    margin: 0 auto; /* Centers the main content block */
+}
+
+/* Profile Image Styling (Visual Anchor) */
+.profile-img {
+    width: 150px; /* Standard size for a profile pic */
+    height: 150px; /* Makes it a perfect square */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 50%; /* Makes the image perfectly round */
+    display: block; /* Forces the image to behave correctly in the layout */
+    margin: 0 auto 20px; /* Centers the image and adds spacing below it */
+    border: 3px solid #ADD8E6; /* Adds a visual frame/border to the picture */
+}
+
+/* Section Headings */
+h2, h3 {
+    color: #ADD8E6;
+    margin-top: 40px;
+    border-bottom: 1px solid rgba(173, 216, 230, 0.3); /* Subtle line under titles */
+    padding-bottom: 5px;
+}
+
+/* Body Text */
+p {
+    margin-bottom: 20px;
+    line-height: 1.7; /* Improves readability for longer paragraphs */
+    /* Keep text left-aligned inside the main block for easier reading */
+    text-align: left; 
+}
+
+/* Skill List Styling */
+.skill-list {
+    list-style: none; /* Removes default bullet points */
+    padding: 0;
+    display: flex; /* Arranges items in a row */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if needed */
+    justify-content: center; /* Centers the list items */
+    gap: 10px; /* Space between the list items */
+    margin: 20px auto;
+    max-width: fit-content; /* Makes the list itself only take up required space */
+}
+
+.skill-list li {
+    background-color: rgba(173, 216, 230, 0.1); /* Subtle colored background for each skill chip */
+    padding: 8px 15px;
+    border-radius: 20px; /* Makes it look like a tag/pill */
+    color: #ADD8E6;
+    border: 1px solid rgba(173, 216, 230, 0.5); /* Delicate frame around the skill */
     transition: background-color 0.3s;
-    
-    /* Styling for the "Frame" and "Rounded Edge" (Specific to the Home Button) */
-    border: 2px solid #ADD8E6; /* Adds the frame */
-    border-radius: 8px; /* Creates the rounded edges */
-    background-color: transparent; /* Keeps the background clean until hovered */
-    padding: 10px 30px; /* Generous padding for a button feel */
-    /* Note: Added margin/padding context here for visual consistency if needed */
 }
 
-nav a:hover {
-    background-color: #1e3a58; /* Darker blue background on hover */
+/* Contact Link Styling */
+.contact-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    /* Reuses the button styling but makes it smaller and focused on contact */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366; /* Deeper blue for contrast */
     color: white;
-    /* Optional: Adds visual depth on hover */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-
-/* MAIN CONTENT & FOOTER */
-main {
-    padding: 40px 0;
-    color: #ADD8E6; 
+.social-link:hover {
+    background-color: #0055AA;
 }
 
+/* Footer remains consistent */
 footer {
-    background-color: #000; 
-    color: #666; 
+    background-color: black; /* Reinforces the page background */
+    color: #666;
     padding: 15px 0;
 }
